@@ -32,7 +32,7 @@ Dilom si occupa di fornire soluzioni web3 per aziende e privati. Siamo esperti n
 	<Container maxWidth={["90%","90%","50%","40%"]} align="left">
   <Text fontSize='4xl' sx={{fontFamily:"Roboto", marginTop:"170px", fontWeight:"600"}}>Contatti</Text>
 		<Text fontSize='xl' sx={{fontFamily:"Roboto", fontWeight:"400", marginTop:"20px"}}>
-		Per qualsiasi richiesta o informazione, non esitate a contattarci tramite email o telefono. Siamo a vostra disposizione per rispondere a ogni domanda e fornirvi ulteriori dettagli sulla nostra attività e sui nostri servizi. Saremo lieti di essere d'aiuto per qualsiasi necessità. 
+		{"Per qualsiasi richiesta o informazione, non esitate a contattarci tramite email o telefono. Siamo a vostra disposizione per rispondere a ogni domanda e fornirvi ulteriori dettagli sulla nostra attività e sui nostri servizi. Saremo lieti di essere d'aiuto per qualsiasi necessità."} 
 		</Text>
   <a href={"mailto: test@gmail.com"}><Text fontSize='2xl' sx={{fontFamily:"Roboto", fontWeight:"600", marginTop:"20px"}}>test@gmail.com</Text></a>
   <a href={"mailto: test@gmail.com"}><Text fontSize='2xl' sx={{fontFamily:"Roboto", fontWeight:"600", marginTop:"10px"}}>+41 781231122</Text></a>
