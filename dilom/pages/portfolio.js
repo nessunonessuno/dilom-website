@@ -35,7 +35,7 @@ export default function Portfolio() {
   <GridItem align="center" >
   <Container>
   <Text className="preview_text" sx={{fontSize:["20px","20px","20px","20px"]}}>dadastickers (in corso)</Text>
-  <a target="_blank" href="https://dadastickers.com">
+  <a target="_blank" rel="noreferrer" href="https://dadastickers.com">
   <Image className="portfolio_image" src={preview3}  width={450} />
   </a>
   </Container>
@@ -44,7 +44,7 @@ export default function Portfolio() {
   <GridItem align="center" >
   <Container>
   <Text className="preview_text">NFTMinter</Text>
-  <a target="_blank" href="https://dadastickers.com">
+  <a target="_blank" rel="noreferrer" href="https://dadastickers.com">
   <Image className="portfolio_image" src={preview3}  width={450} />
   </a>
   </Container>
@@ -67,7 +67,7 @@ export default function Portfolio() {
   <GridItem align="center" >
   <Container>
   <Text className="preview_text">Illegnodicasa - classico</Text>
-  <a target="_blank" href="https://illegnodicasa.ch">
+  <a target="_blank" rel="noreferrer" href="https://illegnodicasa.ch">
   <Image className="portfolio_image" src={preview2}  width={450} />
   </a>
   </Container>
@@ -76,7 +76,7 @@ export default function Portfolio() {
   <GridItem align="center" >
   <Container>
   <Text className="preview_text">commerce - cryptovalute</Text>
-  <a target="_blank" href="https://illegnodicasa.ch">
+  <a target="_blank" rel="noreferrer" href="https://illegnodicasa.ch">
   <Image  className="portfolio_image" src={preview2}  width={450} />
   </a>
   </Container>
@@ -97,7 +97,7 @@ export default function Portfolio() {
   <GridItem align="center" >
   <Container>
   <Text className="preview_text" sx={{color:"black"}}>piattaforma di prestito</Text>
-  <a target="_blank" href="/sample_1/">
+  <a target="_blank" rel="noreferrer" href="/sample_1/">
   <Image className="portfolio_image" src={preview} width={450} />
   </a>
   </Container>
@@ -106,7 +106,7 @@ export default function Portfolio() {
   <GridItem align="center" >
   <Container>
   <Text className="preview_text" sx={{color:"black"}}>webcracy - piattaforma di voto</Text>
-  <a target="_blank" href="https://webcracy.com">
+  <a target="_blank" rel="noreferrer" href="https://webcracy.com">
   <Image className="portfolio_image" src={preview4} width={450} />
   </a>
   </Container>

@@ -16,7 +16,7 @@ export default function index() {
       </Text>
     <Text  align="left" sx={{marginTop:"50px", fontSize:["16px","20px"], fontFamily:"Roboto",}} >
 
-sono uno sviluppatore web esperto in tecnologie all'avanguardia come NFT, Web3, criptovalute e smart contract. Grazie alla mia conoscenza approfondita in queste aree, aiuto le persone e le aziende a realizzare le loro idee attraverso soluzioni personalizzate. Se sei interessato a scoprire come posso aiutare te o la tua azienda, contattami per una consulenza gratuita.
+sono uno sviluppatore web esperto in tecnologie all&apos;avanguardia come NFT, Web3, criptovalute e smart contract. Grazie alla mia conoscenza approfondita in queste aree, aiuto le persone e le aziende a realizzare le loro idee attraverso soluzioni personalizzate. Se sei interessato a scoprire come posso aiutare te o la tua azienda, contattami per una consulenza gratuita.
     </Text>
     <Link href="/contatti"><Button className="bbb" sx={{backgroundColor:"#181414", padding:"25px", borderRadius:"200px", fontSize:"20px", marginTop:"30px"}}>contattami</Button></Link>
     </Container>
