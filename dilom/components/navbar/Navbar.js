@@ -18,11 +18,10 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import Link from "next/link";
+import Image from "next/image";
+import logo from "/public/image.png"
 
-
-const Links = ['Home', 'Portfolio', 'About'];
-
-export default function Simple(props) {
+export default function Navbar(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -38,7 +37,7 @@ export default function Simple(props) {
             _hover={{backgroundColor:"transparent"}}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Link href="/"> <Box sx={{position:"relative", left:{"sm":"0%", "lg":"200%"},  fontSize:"30px"}}>DiLOM</Box></Link>
+            <Link href="/"> <Box sx={{position:"relative", left:["0%", "50%", "200%", "200%"], fontFamily:"Lato", fontWeight:"800", fontSize:"30px"}}>dilom</Box></Link>
   
           </HStack>
           <Flex alignItems={'center'} align="center" sx={{position:"relative", right:"50%",transform: "translateX(50%)"}}>
@@ -46,9 +45,13 @@ export default function Simple(props) {
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
-              {Links.map((link) => (
-                <Link key={link} href={"/" + link.toLowerCase()}><Text  rounded={'md'} _hover={{textDecoration: 'none',color:"pink"}}href={'#'}>{link}</Text></Link>
-              ))}
+
+
+                <Link key={"home"} href={"/"}><Text  rounded={'md'} _hover={{textDecoration: 'none',color:"pink"}}href={'#'}>{"home"}</Text></Link>
+                <Link key={"portfolio"} href={"/portfolio"}><Text  rounded={'md'} _hover={{textDecoration: 'none',color:"pink"}}href={'#'}>{"portfolio"}</Text></Link>
+                <Link key={"contatti"} href={"/contatti"}> <Text  rounded={'md'} _hover={{textDecoration: 'none',color:"pink"}}href={'#'}>{"contatti"}</Text></Link>
+
+
             </HStack>
           </Flex>
         </Flex>
@@ -56,9 +59,13 @@ export default function Simple(props) {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              {Links.map((link) => (
-                <Link key={link} href={"/" + link.toLowerCase()}><Text rounded={'md'} sx={{backgroundColor:"black", padding:"5px", fontSize:"20px", fontFamily:"Roboto"}} _hover={{textDecoration: 'none',color:"pink"}}href={'#'}>{link.toUpperCase()}</Text></Link>
-              ))}
+
+
+                <Link key={"home"} href={"/"}><Text  rounded={'md'} _hover={{textDecoration: 'none',color:"pink"}}href={'#'}>{"home"}</Text></Link>
+                <Link key={"portfolio"} href={"/portfolio"}><Text  rounded={'md'} _hover={{textDecoration: 'none',color:"pink"}}href={'#'}>{"portfolio"}</Text></Link>
+                <Link key={"contatti"} href={"/contatti"}> <Text  rounded={'md'} _hover={{textDecoration: 'none',color:"pink"}}href={'#'}>{"contatti"}</Text></Link>
+
+
             </Stack>
           </Box>
         ) : null}

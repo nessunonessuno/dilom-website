@@ -31,7 +31,7 @@ export default function SmallCentered() {
         <Stack direction={'row'} spacing={6}>
           <Link href={'/'} sx={{fontFamily:"Roboto", fontSize:"20px"}}>Home</Link>
           <Link href={'/portfolio'} sx={{fontFamily:"Roboto", fontSize:"20px"}}>Portfolio</Link>
-          <Link href={'/about'} sx={{fontFamily:"Roboto", fontSize:"20px"}}>About</Link>
+          <Link href={'/contatti'} sx={{fontFamily:"Roboto", fontSize:"20px"}}>About</Link>
         </Stack>
       </Container>
       <Box>

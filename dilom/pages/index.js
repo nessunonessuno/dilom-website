@@ -1,22 +1,24 @@
 import { Container, Text, Button, SimpleGrid, GridItem, Box } from '@chakra-ui/react'
+import Link from "next/link"
 
 export default function index() {
   return (
     <>
-    <Container align="center" sx={{maxWidth:["100%", "100%", "55%"], marginBottom:"70px"}}>
-      <Text  className="titolo" sx={{ fontSize:["50px","70px","100px"], fontWeight:"800", fontFamily:"IBM Plex Sans" }}>Web3: il futuro del web è qui.</Text>
+    <Container align="center" sx={{maxWidth:["100%", "100%", "55%"], marginBottom:["200px","70px"]}}>
+      <Text  className="titolo" sx={{ fontSize:["50px","50px","70px","100px"], fontWeight:"800", fontFamily:"IBM Plex Sans" }}>Soluzioni innovative per il futuro del web.</Text>
       <Text sx={{ fontSize:["15px","15px","30px"]}}>Sviluppo e consulenza</Text>
     </Container>
 
 
     <Container  sx={{maxWidth:"70%", marginTop:["100px", "150px","200px"],marginBottom:"100px", backgroundColor:"transparent"}}>
       <Text  align="left" sx={{ fontSize:["40px","40px","40px"], fontWeight:"800", fontFamily:"IBM Plex Sans" }}>
-      Esplora le nuove <p className="colored">opportunità</p> con noi.
+      Esplora le nuove <p className="colored">opportunità</p> con me.
       </Text>
-    <Text  align="left" sx={{marginTop:"50px", fontSize:"20px", fontFamily:"Roboto",}} >
-        {"Siamo un'azienda leader nello sviluppo di soluzioni basate su tecnologie innovative come NFT, Web3, criptovalute e smart contract. Il nostro team di esperti è altamente qualificato e ha una profonda conoscenza di queste tecnologie emergenti, che rappresentano il futuro del web e dell'economia digitale. Grazie alla nostra esperienza e alla nostra passione, siamo in grado di offrire servizi di consulenza e sviluppo personalizzati per aiutare le aziende a sfruttare al meglio il potere delle NFT, delle criptovalute e degli smart contract per trasformare le loro idee in realtà. Se sei interessato a scoprire come possiamo aiutare la tua azienda a crescere e a prosperare nel mondo digitale, non esitare a contattarci per una consulenza gratuita."}
+    <Text  align="left" sx={{marginTop:"50px", fontSize:["16px","20px"], fontFamily:"Roboto",}} >
+
+sono uno sviluppatore web esperto in tecnologie all'avanguardia come NFT, Web3, criptovalute e smart contract. Grazie alla mia conoscenza approfondita in queste aree, aiuto le persone e le aziende a realizzare le loro idee attraverso soluzioni personalizzate. Se sei interessato a scoprire come posso aiutare te o la tua azienda, contattami per una consulenza gratuita.
     </Text>
-    <Button className="bbb" sx={{backgroundColor:"#181414", padding:"25px", borderRadius:"200px", fontSize:"20px", marginTop:"30px"}}>Contattaci</Button>
+    <Link href="/contatti"><Button className="bbb" sx={{backgroundColor:"#181414", padding:"25px", borderRadius:"200px", fontSize:"20px", marginTop:"30px"}}>contattami</Button></Link>
     </Container>
 
 
@@ -26,10 +28,11 @@ export default function index() {
       <Box rounded='lg' w='100%' _hover={{backgroundColor:"#322929"}}color='white' sx={{backgroundColor:"#181414", padding:"10"}}>
       
       <Text align="left" sx={{ fontFamily:"IBM Plex Sans", fontSize:"15px", opacity:"0.5"}}>NFT</Text>
-      <Text align="center" sx={{fontFamily:"Roboto", fontSize:"30px", fontWeight:"800"}}>Token di Propietà</Text>
+      <Text align="center" sx={{fontFamily:"Roboto", fontSize:["25px","30px"], fontWeight:"800"}}>Token di Proprietà</Text>
       <Text align="center" sx={{ marginTop:"20px",fontFamily:"Roboto", fontSize:"15px", opacity:"0.8"}}>
-Crea il tuo progetto NFT con noi e garantisci la proprietà unica della tua creazione digitale. Utilizziamo la tecnologia blockchain per rendere il tuo progetto sicuro e verificabile.
-</Text>
+      
+Le NFT rappresentano una grande opportunità per gli artisti e i creatori digitali di tutto il mondo. Con le NFT, puoi garantire la proprietà esclusiva della tua creazione digitale e renderla autentica in un modo che non era possibile in precedenza.      
+      </Text>
 
       </Box>
       </GridItem>
@@ -37,9 +40,12 @@ Crea il tuo progetto NFT con noi e garantisci la proprietà unica della tua crea
       <Box rounded='lg' w='100%' _hover={{backgroundColor:"#322929"}} color='white' sx={{backgroundColor:"#181414", padding:"10"}}>
       
       <Text align="left" sx={{ fontFamily:"IBM Plex Sans", fontSize:"15px", opacity:"0.5"}}>Smart Contract</Text>
-      <Text align="center" sx={{fontFamily:"Roboto", fontSize:"30px", fontWeight:"800"}}>Contratti programmabili</Text>
+      <Text align="center" sx={{fontFamily:"Roboto", fontSize:["25px","30px"], fontWeight:"800"}}>Contratti programmabili</Text>
       <Text align="center" sx={{ marginTop:"20px",fontFamily:"Roboto", fontSize:"15px", opacity:"0.8"}}>
-Grazie ai smart contract, puoi gestire in modo sicuro e trasparente le tue transazioni commerciali, riducendo al minimo gli errori umani e i tempi di attesa.      </Text>
+      
+      Grazie agli smart contract, o contratti programmabili, puoi automatizzare e rendere trasparente qualsiasi processo che richieda un accordo tra parti. Gli smart contract ti permettono di eliminare intermediari e ridurre i tempi di attesa, rendendo tutto più semplice e veloce.
+
+      </Text>
 
       </Box>
       </GridItem>
@@ -48,10 +54,11 @@ Grazie ai smart contract, puoi gestire in modo sicuro e trasparente le tue trans
       <Box rounded='lg' w='100%' _hover={{backgroundColor:"#322929"}} color='white' sx={{backgroundColor:"#181414", padding:"10"}}>
       
       <Text align="left" sx={{ fontFamily:"IBM Plex Sans", fontSize:"15px", opacity:"0.5"}}>Crypto</Text>
-      <Text align="center"  sx={{fontFamily:"Roboto", fontSize:"30px", fontWeight:"800"}}>Cryptovalute</Text>
+      <Text align="center"  sx={{fontFamily:"Roboto", fontSize:["25px","30px"], fontWeight:"800"}}>Cryptovalute</Text>
       <Text align="center" sx={{ marginTop:"20px",fontFamily:"Roboto", fontSize:"15px", opacity:"0.8"}}>
-      Sfrutta al massimo le potenzialità delle criptovalute con noi e scopri come possono cambiare il modo in cui gestisci il tuo denaro e le tue attività commerciali.</Text>
 
+Le criptovalute rappresentano una nuova forma di denaro digitale, decentralizzato e sicuro grazie alla tecnologia blockchain. Sono in grado di rivoluzionare il modo in cui gestiamo le nostre finanze e le attività commerciali, rendendole più veloci, trasparenti ed efficienti.
+      </Text>
       </Box>
       </GridItem>
 
