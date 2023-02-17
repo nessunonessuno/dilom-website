@@ -3,7 +3,9 @@ import { ChakraProvider } from '@chakra-ui/react'
 import Navbar from "../components/navbar/Navbar"
 import Footer from "../components/footer/Footer"
 import Navbar_sample from "../components/sample_1/navbar/Navbar"
-import logo from "../public/ab.png"
+import Navbar_sample2 from "../components/sample_2/Navbar"
+
+import logo from "../public/sample_1/ab.png"
 
 function MyApp({ Component, pageProps, ...appProps }) {
 
@@ -16,6 +18,14 @@ function MyApp({ Component, pageProps, ...appProps }) {
 
         <Component {...pageProps} />
         </div>
+        </ChakraProvider>)
+
+    if ([`/sample_2`].includes(appProps.router.pathname))
+      return (
+
+        <ChakraProvider>
+        <Navbar_sample2 />
+        <Component {...pageProps} />
         </ChakraProvider>)
 
   return (

@@ -1,9 +1,10 @@
 import { Container, List, UnorderedList, ListItem, Divider,Text, Button, SimpleGrid, GridItem, Box } from '@chakra-ui/react'
 import Image from "next/image";
-import preview from "/public/preview.jpg"
-import preview2 from "/public/preview2.jpg"
-import preview3 from "/public/preview3.jpg"
-import preview4 from "/public/preview4.jpg"
+import preview from "/public/previews/preview.jpg"
+import preview2 from "/public/previews/preview2.jpg"
+import preview3 from "/public/previews/preview3.jpg"
+import preview4 from "/public/previews/preview4.jpg"
+import preview5 from "/public/previews/preview5.jpg"
 
 import Link from "next/link"
 
@@ -16,7 +17,7 @@ export default function Portfolio() {
 	<Container maxWidth="100%" align="center">
   <Container maxWidth={["100%","80%"]} marginBottom="100px">
   <Text align="left" sx={{fontSize:["70px", "70px","100px", "100px"],fontFamily:"IBM Plex Sans", fontWeight:"700"}}>
-  progetti
+  Progetti
   </Text>
   <Text align="left" sx={{fontSize:["20px", "20px","30px", "30px"],fontFamily:"IBM Plex Sans", fontWeight:"700"}}>
   Portfolio dei miei progetti
@@ -34,7 +35,7 @@ export default function Portfolio() {
 
   <GridItem align="center" >
   <Container>
-  <Text className="preview_text" sx={{fontSize:["20px","20px","20px","20px"]}}>dadastickers (in corso)</Text>
+  <Text className="preview_text" sx={{fontSize:["20px","20px","20px","20px"]}}>dadastickers</Text>
   <a target="_blank" rel="noreferrer" href="https://dadastickers.com">
   <Image className="portfolio_image" src={preview3}  width={450} />
   </a>
@@ -44,8 +45,8 @@ export default function Portfolio() {
   <GridItem align="center" >
   <Container>
   <Text className="preview_text">NFTMinter</Text>
-  <a target="_blank" rel="noreferrer" href="https://dadastickers.com">
-  <Image className="portfolio_image" src={preview3}  width={450} />
+  <a target="_blank" rel="noreferrer" href="/sample_2/">
+  <Image className="portfolio_image" src={preview5}  width={450} />
   </a>
   </Container>
   </GridItem>
@@ -66,7 +67,7 @@ export default function Portfolio() {
 
   <GridItem align="center" >
   <Container>
-  <Text className="preview_text">Illegnodicasa - classico</Text>
+  <Text className="preview_text">Illegnodicasa</Text>
   <a target="_blank" rel="noreferrer" href="https://illegnodicasa.ch">
   <Image className="portfolio_image" src={preview2}  width={450} />
   </a>
@@ -75,7 +76,7 @@ export default function Portfolio() {
 
   <GridItem align="center" >
   <Container>
-  <Text className="preview_text">commerce - cryptovalute</Text>
+  <Text className="preview_text">cryptocommerce</Text>
   <a target="_blank" rel="noreferrer" href="https://illegnodicasa.ch">
   <Image  className="portfolio_image" src={preview2}  width={450} />
   </a>
@@ -105,7 +106,7 @@ export default function Portfolio() {
 
   <GridItem align="center" >
   <Container>
-  <Text className="preview_text" sx={{color:"black"}}>webcracy - piattaforma di voto</Text>
+  <Text className="preview_text" sx={{color:"black"}}>webcracy</Text>
   <a target="_blank" rel="noreferrer" href="https://webcracy.com">
   <Image className="portfolio_image" src={preview4} width={450} />
   </a>
@@ -118,11 +119,52 @@ export default function Portfolio() {
   <Divider sx={{marginBottom:"100px", opacity:"0.5"}}/>
 
   <Container maxWidth={["100%","80%"]} marginBottom="100px">
-  <Text align="left" sx={{fontSize:["50px", "50px","100px", "100px"],fontFamily:"IBM Plex Sans", fontWeight:"700"}}>
-  competenze
+  <Text align="left" sx={{fontSize:["60px", "60px","100px", "100px"],fontFamily:"IBM Plex Sans", fontWeight:"700"}}>
+  Chi sono
   </Text>
   <Text align="left" sx={{fontSize:["20px", "20px","30px", "30px"],fontFamily:"IBM Plex Sans", fontWeight:"700"}}>
-  le mie competenze come sviluppatore
+  Informazioni su di me
+  </Text>
+  </Container>
+  <Container maxWidth={["100%","100%","60%","60%"]}>
+  <Text sx={{fontSize:"20px", fontFamily:"IBM Plex Sans"}}>
+    Ciao, sono un programmatore con sede in Ticino, Svizzera. Ho una vasta esperienza nella programmazione e nello sviluppo web, che va dalla sicurezza informatica, fino allo sviluppo di interfaccie UI. Sono sempre stato appassionato della tecnologia e mi piace affrontare nuove sfide per migliorare le mie abilità e rimanere al passo con le ultime tendenze del settore. Il mio obiettivo è quello di creare soluzioni su misura per le esigenze dei miei clienti, garantendo la massima qualità e il massimo livello di soddisfazione.
+  </Text>
+</Container>
+
+  <Divider sx={{marginTop:"100px", marginBottom:"100px", opacity:"0.5"}}/>
+
+  <Container maxWidth={["100%","80%"]} marginBottom="100px">
+  <Text align="left" sx={{fontSize:["60px", "60px","100px", "100px"],fontFamily:"IBM Plex Sans", fontWeight:"700"}}>
+  Cosa offro
+  </Text>
+  <Text align="left" sx={{fontSize:["20px", "20px","30px", "30px"],fontFamily:"IBM Plex Sans", fontWeight:"700"}}>
+  I miei servizi
+  </Text>
+  </Container>
+  <Container maxWidth={["100%","100%","60%","60%"]}>
+  <Text align="left" sx={{fontSize:"20px", fontFamily:"IBM Plex Sans"}}>
+    <UnorderedList>
+      <ListItem>Sviluppo di siti web personalizzati e reattivi per le esigenze del cliente, inclusi siti web statici e dinamici</ListItem>
+      <ListItem>Creazione di siti web web3 basati sulla tecnologia blockchain e criptovalute, come Ethereum, con l'utilizzo di Smart Contract con Solidity</ListItem>
+      <ListItem>Creazione di NFT personalizzati per i clienti che desiderano vendere opere d'arte, giochi o altri prodotti digitali</ListItem>
+      <ListItem>Implementazione di pagamenti in criptovaluta e integrazione di portafogli digitali con i siti web, in modo da offrire una soluzione di pagamento universale per i clienti</ListItem>
+      <ListItem>Creazione di siti web di e-commerce personalizzati, inclusi sistemi di pagamento fiat e crypto  </ListItem>
+
+    </UnorderedList>
+      </Text>
+
+
+</Container>
+
+  <Divider sx={{marginTop:"100px",marginBottom:"100px", opacity:"0.5"}}/>
+
+  <Container maxWidth={["100%","80%"]} marginBottom="100px">
+  <Text align="left" sx={{fontSize:["50px", "50px","100px", "100px"],fontFamily:"IBM Plex Sans", fontWeight:"700"}}>
+  Competenze
+  </Text>
+  <Text align="left" sx={{fontSize:["20px", "20px","30px", "30px"],fontFamily:"IBM Plex Sans", fontWeight:"700"}}>
+  Le mie competenze come sviluppatore
   </Text>
   </Container>
 
@@ -168,21 +210,6 @@ export default function Portfolio() {
 
   </Container>
 
-  <Divider sx={{marginBottom:"100px", opacity:"0.5"}}/>
-
-  <Container maxWidth={["100%","80%"]} marginBottom="100px">
-  <Text align="left" sx={{fontSize:["60px", "60px","100px", "100px"],fontFamily:"IBM Plex Sans", fontWeight:"700"}}>
-  chi sono
-  </Text>
-  <Text align="left" sx={{fontSize:["20px", "20px","30px", "30px"],fontFamily:"IBM Plex Sans", fontWeight:"700"}}>
-  Informazioni su di me
-  </Text>
-  </Container>
-  <Container maxWidth={["100%","100%","60%","60%"]}>
-  <Text sx={{fontSize:"20px", fontFamily:"IBM Plex Sans"}}>
-    Ciao, sono un programmatore con sede in Ticino, Svizzera. Ho una vasta esperienza nella programmazione e nello sviluppo web, che va dalla sicurezza informatica, fino allo sviluppo di interfaccie UI. Sono sempre stato appassionato della tecnologia e mi piace affrontare nuove sfide per migliorare le mie abilità e rimanere al passo con le ultime tendenze del settore. Il mio obiettivo è quello di creare soluzioni su misura per le esigenze dei miei clienti, garantendo la massima qualità e il massimo livello di soddisfazione.
-  </Text>
-</Container>
 
 	</Container>
 	</>

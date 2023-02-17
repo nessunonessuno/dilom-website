@@ -13,10 +13,15 @@
     "@chakra-ui/react": "^2.4.3",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@react-three/drei": "^9.56.25",
+    "@react-three/fiber": "^8.11.2",
+    "@types/three": "^0.149.0",
     "framer-motion": "^7.10.2",
     "next": "13.0.7",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sharp": "^0.31.3",
+    "three": "^0.149.0"
   },
   "devDependencies": {
     "eslint": "8.29.0",

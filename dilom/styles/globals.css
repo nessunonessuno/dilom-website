@@ -4,6 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap');
+
 body{
 background: rgb(96,0,40) !important;
 background: linear-gradient(328deg,rgba(0,0,0,1) -10%, rgba(96,0,40,1) 43%, rgba(54,1,83,1) 100%) !important;
@@ -138,6 +141,74 @@ background-size: 800px 800px;
 .portfolio_image:hover{
   border-radius: 30px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-  opacity: 0.8;
+  opacity: 0.9;
 
+}
+
+
+
+canvas {outline: none;width: 100vw !important; height: 100vh !important; display: block; }
+
+.title{
+  position: absolute;
+  right: 50%;
+  transform: translate(50%,-50%);
+  color: white;
+  z-index: 1000;
+  font-family: "VT323";
+
+}
+
+.subtitle{
+  position: absolute !important;
+  right: 50% !important;
+  transform: translate(50%,-50%);
+  color: white;
+  z-index: 1000;
+  font-family: "VT323";
+
+}
+
+.nav-btn {
+  color: white;
+  border-radius: 25px !important;
+  background-color: black !important;
+  padding: 25px !important;
+  font-size: 18px !important;
+  margin-right: 0px !important;
+  margin-top: 50px !important;
+  z-index: 10000 !important;
+  font-family: "Prompt" !important;
+
+}
+.nav-btn:hover{
+  background-color: white !important;
+  color: black;
+}
+
+.navbar{
+  position: absolute !important;
+  right: 0% !important;
+}
+
+.minter{
+  position: absolute !important;
+  top: 70%;
+  right: 50%;
+  width: 200px;
+  transform: translate(50%,-50%);
+  color: white;
+  border-radius: 30px !important;
+  background-color: black !important;
+  padding: 30px !important;
+  font-size: 30px !important;
+  z-index: 10000 !important;
+  font-family: "Prompt";
+
+
+}
+
+.minter:hover{
+  background-color: white !important;
+  color: black !important;
 }

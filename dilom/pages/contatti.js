@@ -1,10 +1,5 @@
 import { Container, List, UnorderedList, ListItem, Divider,Text, Button, SimpleGrid, GridItem, Box } from '@chakra-ui/react'
 import Image from "next/image";
-import preview from "/public/preview.jpg"
-import preview2 from "/public/preview2.jpg"
-import preview3 from "/public/preview3.jpg"
-import preview4 from "/public/preview4.jpg"
-
 import Link from "next/link"
 import { EmailIcon, PhoneIcon} from '@chakra-ui/icons'
 
@@ -17,25 +12,25 @@ export default function Contatti() {
 	<Container maxWidth="100%" align="center">
   <Container maxWidth={["100%","80%"]} marginBottom="100px">
   <Text align="left" sx={{fontSize:["70px", "70px","100px", "100px"],fontFamily:"IBM Plex Sans", fontWeight:"700"}}>
-  contatti
+  Contatti
   </Text>
   <Text align="left" sx={{fontSize:["20px", "20px","30px", "30px"],fontFamily:"IBM Plex Sans", fontWeight:"700"}}>
-	chiedimi qualunque cosa
+	Chiedimi qualunque cosa
   </Text>
   </Container>
 
 
-  <Container className="bg_colored" sx={{padding:"5"}}>
+  <Container className="bg_colored2" sx={{padding:"5"}}>
 
   <List>
-    <ListItem><a href={"mailto: test@gmail.com"}>
+    <ListItem><a href={"mailto: dilomtech@gmail.com"}>
           <Text align="center" sx={{marginBottom:"30px",fontSize:["30px", "30px", "30px"],fontFamily:"IBM Plex Sans", fontWeight:"700"}}>
-          <EmailIcon boxSize={10} color={"black"}/>: test@gmail.com
+          <EmailIcon boxSize={10} color={"black"}/> dilomtech@gmail.com
           </Text>
     </a></ListItem>
-    <ListItem><a href={"mailto: test@gmail.com"}>
+    <ListItem><a href={"tel: +41788071882"}>
               <Text align="center" sx={{fontSize:["30px", "30px", "30px"],fontFamily:"IBM Plex Sans", fontWeight:"700"}}>
-          <PhoneIcon boxSize={10} color={"black"}/>: +41 78 123 11 22
+          <PhoneIcon boxSize={10} color={"black"}/> +41788071882
           </Text>
           </a></ListItem>
   </List>
@@ -52,7 +47,8 @@ export default function Contatti() {
   </Container>
   <Container maxWidth={["100%","100%","60%","60%"]}>
   <Text sx={{fontSize:"20px", fontFamily:"IBM Plex Sans"}}>
-  Se stai lavorando su un progetto che ti appassiona e hai bisogno di supporto, non esitare a contattarmi. Sono sempre alla ricerca di collaborazioni con persone motivate e progetti stimolanti. Insieme possiamo dare vita a idee innovative e realizzare grandi cose.  </Text>
+  Se sei un programmatore e stai lavorando su un progetto che ti appassiona, sentiti libero di contattarmi se hai bisogno di un aiuto. Sono sempre alla ricerca di collaborazioni con persone motivate e progetti stimolanti.
+  </Text>
   </Container>
 
 
