@@ -146,8 +146,8 @@ export default function Portfolio() {
   <Text align="left" sx={{fontSize:"20px", fontFamily:"IBM Plex Sans"}}>
     <UnorderedList>
       <ListItem>Sviluppo di siti web personalizzati e reattivi per le esigenze del cliente, inclusi siti web statici e dinamici</ListItem>
-      <ListItem>Creazione di siti web web3 basati sulla tecnologia blockchain e criptovalute, come Ethereum, con l'utilizzo di Smart Contract con Solidity</ListItem>
-      <ListItem>Creazione di NFT personalizzati per i clienti che desiderano vendere opere d'arte, giochi o altri prodotti digitali</ListItem>
+      <ListItem>Creazione di siti web web3 basati sulla tecnologia blockchain e criptovalute, come Ethereum, con l&apos;utilizzo di Smart Contract con Solidity</ListItem>
+      <ListItem>Creazione di NFT personalizzati per i clienti che desiderano vendere opere d&apos;arte, giochi o altri prodotti digitali</ListItem>
       <ListItem>Implementazione di pagamenti in criptovaluta e integrazione di portafogli digitali con i siti web, in modo da offrire una soluzione di pagamento universale per i clienti</ListItem>
       <ListItem>Creazione di siti web di e-commerce personalizzati, inclusi sistemi di pagamento fiat e crypto  </ListItem>
 
