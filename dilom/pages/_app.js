@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps, ...appProps }) {
 
         <ChakraProvider>
         <Head>
-      <title>Dilom Ticino - Web development per il mondo crypto | sviluppo di applicazioni blockchain</title>        
+      <title>Ticino Web Development per il Mondo Crypto - Dilom</title>        
       <meta name="description" content="Sviluppo di soluzioni blockchain personalizzate per il mondo crypto. Contattami per realizzare il tuo progetto." />
 
         </Head>
@@ -41,7 +41,7 @@ function MyApp({ Component, pageProps, ...appProps }) {
   return (
     <ChakraProvider>
         <Head>
-      <title>Dilom Ticino - Web development per il mondo crypto | sviluppo di applicazioni blockchain</title>        
+      <title>Ticino Web Development per il Mondo Crypto - Dilom</title>        
       <meta name="description" content="Sviluppo di soluzioni blockchain personalizzate per il mondo crypto. Contattami per realizzare il tuo progetto." />
 
         </Head>
