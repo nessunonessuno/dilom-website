@@ -18,11 +18,25 @@ import {
   Container
 } from '@chakra-ui/react';
 import Link from "next/link";
-
+import WalletModal from "../chain/WalletModal";
+import ChangeChainModal from "../chain/ChangeChainModal";
+import { useDisconnect, useAccount, useNetwork } from "wagmi";
 
 
 export default function Simple(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { disconnect } = useDisconnect();
+  const { address, connector, isConnected } = useAccount()
+  const { chain,chains} = useNetwork();
+  
+  const renderButton = () => {
+    if (chain.id != chains[0].id) {
+      return <ChangeChainModal />
+    }
+    else{
+      return <Button className="nav-btn" onClick={disconnect}>Disconnect</Button>
+    }
+  }
 
   return (
     <>
@@ -34,7 +48,8 @@ export default function Simple(props) {
           <Flex alignItems={'center'} align="center" >
           </Flex>
           <HStack spacing={8} alignItems={'center'}>
-  				<Link key={"position"} href={"#"}><Button className="nav-btn">{"Connect Wallet"}</Button></Link>
+          {isConnected ? renderButton() :<WalletModal />}
+
           </HStack>
         </Flex>
 
