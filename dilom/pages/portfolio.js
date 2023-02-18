@@ -74,15 +74,6 @@ export default function Portfolio() {
   </Container>
   </GridItem>
 
-  <GridItem align="center" >
-  <Container>
-  <Text className="preview_text">cryptocommerce</Text>
-  <a target="_blank" rel="noreferrer" href="https://illegnodicasa.ch">
-  <Image  className="portfolio_image" src={preview2}  width={450} alt={"loading.."} />
-  </a>
-  </Container>
-  </GridItem>
-
   </SimpleGrid>
   </Container>
 
